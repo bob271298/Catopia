@@ -38,8 +38,7 @@ def login():
         "Accept-Language": "en,en-GB;q=0.9,en-US;q=0.8"
     }
     data = {
-        "initData": "query_id=AAHxUwNNAgAAAPFTA03Cco0o&user=%7B%22id%22%3A5587031025%2C%22first_name%22%3A%22Hinata%20%F0%9F%9A%80PoPP%20%F0%9F%8D%85%20%F0%9F%8C%B1SEED%22%2C%22last_name%22%3A%22%7C%20AIO-Telegram%22%2C%22username%22%3A%22Tipang27%22%2C%22language_code%22%3A%22id%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1728174793&hash=da56c1b97ddfccf6d670571b6e06638aace3473f66404f5b146cc1cad2e3cad0"
-    }
+        "initData": "query_here"
     response = requests.post(url, headers=headers, json=data)
     if response.status_code == 201:
         response_json = response.json()
